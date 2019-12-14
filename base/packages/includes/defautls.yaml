@@ -1,0 +1,11 @@
+packages:
+  tmpdir: /tmp/saltstack-packages-formula-archives
+  rootuser: root
+  remote_pkgs: {}
+  pkgs:
+    held: {}
+    wanted: []
+    unwanted: []
+    required:
+      states: []
+      pkgs: []

@@ -1,0 +1,12 @@
+# -*- coding: utf-8 -*-
+# vim: ft=yaml
+
+Debian:
+  pips:
+    required:
+      pkgs:
+        - python-pip
+  pkgs:
+    required:
+      pkgs:
+        - yum-plugin-versionlock
