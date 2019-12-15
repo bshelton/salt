@@ -32,13 +32,13 @@ require.packages:
 wanted.packages:
   pkg.installed:
     - pkgs: {{ wanted_packages | json }}
-    {% if req_packages %}
+    {% if req_packages is defined%}
     - require:
       {% for pkg in req_packages %}
       - pkg: {{ pkg }}
       {% endfor %}
     {% endif %}
-    {% if req_states %}
+    {% if req_states is defined %}
      {% for state in req_states %}
        - sls: {{ state }}
       {% endfor %}
