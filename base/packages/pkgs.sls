@@ -24,6 +24,7 @@ require.packages:
       {% for state in req_states %}
       - sls: {{ state }}
       {% endfor %}
+    {% endif %}
 {% endif %}
 
 
@@ -35,6 +36,7 @@ wanted.packages:
     - require:
       {% for pkg in req_packages %}
       - pkg: {{ pkg }}
+      {% endfor %}
     {% endif %}
     {% if req_states %}
      {% for state in req_states %}
