@@ -3,7 +3,7 @@
 {% set wanted_packages = packages.os_packages.wanted %}
 
 
-{% if packages.os_packages.required.states is defined %}
+{% if packages.os_packages.required is defined %}
 {% set req_states = packages.os_packages.required.states %}
 
 include:
