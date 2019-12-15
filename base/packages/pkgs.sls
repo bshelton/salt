@@ -13,7 +13,7 @@ include:
 {% endif %}
 
 
-{% if packages.os_packages.required.pkgs is defined %}
+{% if packages.os_packages.required is defined %}
 {% set req_packages = packages.os_packages.required.pkgs %}
 
 require.packages:
